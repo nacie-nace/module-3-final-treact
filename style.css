@@ -13,6 +13,12 @@ nav {
     padding-top: 24px;
 }
 
+.nav__menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .nav__logo {
     display: flex;
     align-items: center;
@@ -1255,6 +1261,30 @@ footer::after {
   justify-content: center;
 }
 
+.values__list > div {
+  position: relative;
+}
+
+.values__list i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.values__list i.green {
+  background-color: #9ae6b4;
+  color: #276749;
+}
+
+.values__list i.red {
+  background-color: #feb2b2;
+  color: #9b2c2c;
+}
 
 
 /* Responsive */
@@ -1282,7 +1312,15 @@ footer::after {
 }
 
 @media(max-width: 768px) {
-    
+/*     
+    .nav__links {
+    display: none;
+  }
+
+  .nav__menu {
+    display: block;
+  } */
+
     #values .row {
         flex-direction: column-reverse;
     }
@@ -1695,6 +1733,16 @@ footer::after {
     .btn__menu {
         display: block;
     }
+
+      
+    .nav__links {
+    display: none;
+  }
+
+  .nav__menu {
+    display: block;
+  }
+  
     header .row {
         flex-direction: column;
         align-items: center;
